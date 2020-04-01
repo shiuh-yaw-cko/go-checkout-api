@@ -11,7 +11,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-var sKey = "sk_test_79ab19cc-5c16-4b81-8110-31666040bb6a"
+var sKey = ""sk_test_79ab19cc-5c16-4b81-8110-31666040bb6a
 var pKey = "pk_test_291004cb-8a16-44c3-8c64-37ec45b47cd4"
 var host = "https://api.sandbox.checkout.com/"
 var contentType = "application/json"
@@ -69,6 +69,8 @@ type Customer struct {
 type Links struct {
 	Current     URL `json:"self"`
 	RedirectURL URL `json:"redirect"`
+	Actions 	URL `json:"actions"`
+	Refund 		URL `json:"refund"`
 }
 
 // URL ...
